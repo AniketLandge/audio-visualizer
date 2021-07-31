@@ -1,0 +1,68 @@
+* {
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  height: 100%;
+  overflow: auto;
+}
+#progress {
+  overflow: scroll;
+}
+.container {
+  margin-top: 100px;
+}
+.button-container {
+  align-content: center;
+  margin-top: 30px;
+}
+.play {
+  width: 80px;
+  height: 60px;
+  border-radius: 30px;
+  border-color: cyan;
+}
+.play-icon {
+  color: cyan;
+}
+.forward {
+  width: 80px;
+  height: 40px;
+  border-radius: 30px;
+  border-color: cyan;
+  margin-left: 20px;
+}
+.outer {
+  position: relative;
+}
+.rectangle {
+  position: absolute;
+  height: 30px;
+  width: 120px;
+  background-color: rgb(30, 206, 7);
+  border-radius: 10px;
+  top: -500px;
+  left: 92px;
+  color: #f0f0f0;
+}
+.rectangle .text {
+  padding: 4px;
+}
+.vl {
+  position: absolute;
+  border-left: 6px solid rgb(30, 206, 7);
+  height: 100px;
+  top: -472px;
+  left: 145px;
+}
+.dot {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  background-color: rgb(30, 206, 7);
+  border-radius: 50%;
+  top: -395px;
+  left: 135px;
+}
