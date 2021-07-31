@@ -31,7 +31,7 @@ CanvasRenderingContext2D.prototype.roundRect = function (
 };
 
 audioEl.addEventListener('loadedmetadata', function () {
-  let totalBar = audioEl.duration * seconds;
+  let totalBar = audioEl.duration;
   for (let i = 0; i < totalBar; i++) {
     let height = Math.floor(Math.random() * barMaxHeight) + barMinHeight;
     arr.push(height);
