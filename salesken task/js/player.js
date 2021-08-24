@@ -31,13 +31,18 @@ CanvasRenderingContext2D.prototype.roundRect = function (
 };
 
 audioEl.addEventListener('loadedmetadata', function () {
-  let totalBar = audioEl.duration;
+  let totalBar = audioEl.duration; // this will give duratuion in second
   for (let i = 0; i < totalBar; i++) {
-    let height = Math.floor(Math.random() * barMaxHeight) + barMinHeight;
+    //let height = Math.floor(Math.random() * barMaxHeight) + barMinHeight;
+
+    //return random integer from 100 to 300
+    let height = Math.floor(
+      barMinHeight + Math.random() * (barMaxHeight - barMinHeight)
+    );
     arr.push(height);
   }
 
-  drawBar(-1);
+  drawBar(0);
 });
 
 //event listener for finding bar no
